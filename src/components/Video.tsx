@@ -1,8 +1,9 @@
 import { DefaultUi, Player, Youtube } from "@vime/react";
 import { CaretRight, DiscordLogo, FileArrowDown, Lightning } from "phosphor-react";
 import '@vime/core/themes/default.css'
-import { gql, useQuery } from "@apollo/client";
 import { useGetLessonBySlugQuery } from "../graphql/generated";
+import { useState, CSSProperties } from "react";
+import HashLoader from "react-spinners/HashLoader";
 
 
 
@@ -19,8 +20,9 @@ export function Video(props : VideoProps) {
 
     if(!data || !data.lesson) {
         return (
-            <div className="flex-1">
-                <p>Carregando...</p>
+            <div className="flex-1 flex justify-center items-center flex-col">
+                <HashLoader color="#00B37E" size={150}/>
+                <span className="mt-4">Carregando...</span>
             </div>
         )
     }
