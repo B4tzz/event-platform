@@ -33,16 +33,16 @@ export function Subscribe() {
             <Logo />
 
             <h1 className="mt-8 text-[2.5rem] leading-tight">
-              Construa uma{" "}
+              Construção de uma{" "}
               <strong className="text-blue-500">aplicação completa</strong>, do
-              zero, com <strong className="text-blue-500">React</strong>
+              zero, com <strong className="text-blue-500">React, GraphQL, GraphCMS e TailwindCSS</strong>
             </h1>
 
             <p className="mt-4 text-gray-200 leading-relaxed">
-              Em apenas uma semana você vai dominar na prática uma das
-              tecnologias mais utilizadas e com alta demanda para acessar as
-              melhores oportunidades do mercado.
+              Este projeto demonstra a utilização de alguns conceitos do React e algumas bibliotecas muito poderosas que podem agregar muito valor para os projetos. 
+              GraphQL otimizando a forma em que o front-end consome as informações, o TailwindCSS acelarando a forma de estilizar os componentes e o GraphCMS melhorando a gestão de conteúdo.
             </p>
+            <p className="text-red-600 text-sm mt-2">*Este é um projeto de portifólio, os conteúdos deste projeto são fictícios.</p>
           </div>
 
           <div className="p-8 bg-gray-700 border border-gray-500 rounded">
@@ -72,7 +72,7 @@ export function Subscribe() {
                 disabled={loading}
                 className="mt-4 bg-green-500 uppercase py-4 rounded font-bold text-sm hover:bg-green-700 transition-colors disabled:opacity-50"
               >
-                Garantir minha vaga
+                Acesse as aulas
               </button>
             </form>
           </div>
